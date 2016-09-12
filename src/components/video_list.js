@@ -1,13 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import VideoListItem from './video_list_item';
 
 
-// Create a component (HTML) using JSX
-const App = () => {
-  return <div> Hi! </div>;
-}
+const VideoList = props => {
+  var videoItems = props.videos.map( video => <VideoListItem video={video} key={video.etag} />);
+  return (
+    <ul className="col-md-4 list-group">
+      { videoItems }
+    </ul>
+  );
+  
+};
 
 
-// Insert in the DOM
-// We use ReactDOM library
-ReactDOM.render(<App/> ,document.querySelector('.container'));
+export default VideoList;
