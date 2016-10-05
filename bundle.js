@@ -105,7 +105,7 @@
 	      videos: [],
 	      selectedVideo: null
 	    };
-	    _this.videoSearch('yogi bhajan');
+	    _this.videoSearch('');
 	    return _this;
 	  }
 
@@ -33202,9 +33202,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'search-bar' },
-	        'value= ',
-	        this.state.term,
-	        _react2.default.createElement('input', { onChange: function onChange(event) {
+	        _react2.default.createElement('input', { placeholder: 'Search a video', onChange: function onChange(event) {
 	            return _this2.onInputChange(event.target.value);
 	          } })
 	      );
