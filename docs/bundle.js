@@ -33202,7 +33202,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'search-bar' },
-	        _react2.default.createElement('input', { placeholder: 'Search a video', onChange: function onChange(event) {
+	        _react2.default.createElement('input', { className: 'form-control', placeholder: 'Search a video', onChange: function onChange(event) {
 	            return _this2.onInputChange(event.target.value);
 	          } })
 	      );
